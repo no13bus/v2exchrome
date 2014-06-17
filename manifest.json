@@ -1,0 +1,21 @@
+{
+"name": "V2ex search",
+"manifest_version": 2,
+"version" : "1.0",
+"description": "从bing上取得v2ex的搜索结果",
+"icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+ "content_scripts": [
+    {
+      "matches": [
+    	"http://*.v2ex.com/*"
+      ],
+      "js": ["js/jquery-1.11.1.min.js", "js/v2ex.js"]
+    }
+  ]
+
+
+}
